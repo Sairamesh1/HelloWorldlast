@@ -5,13 +5,13 @@ pipeline {
     }
     environment {
         TOMCAT_USER = 'ec2-user'
-        TOMCAT_HOST = '15.206.194.108'
+        TOMCAT_HOST = '3.108.64.245'
         TOMCAT_PATH = '/opt/apache-tomcat-9.0.91/webapps/' 
     }
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'master', credentialsId: 'github', url: 'https://github.com/namagiriboobalan/HelloWorldlast.git'
+                git branch: 'master', credentialsId: 'github', url: 'https://github.com/Sairamesh1/HelloWorldlast.git'
             }
         }
  
